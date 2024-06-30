@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital@1&family=Poppins:wght@100;200;400;500;700&family=Spectral:ital,wght@0,200;0,400;0,500;0,800;1,600&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    --border: .2rem solid rgba(0,0,0,1);
+    --outline: .1rem solid rgba(0,0,0,1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+body {
+    background-image: url(../images/shuffle-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+    .header .logo i {
+        color: var(--orange);
+    }
+
+.header .btn {
+    background-color: transparent;
+    font-size: 13px;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+    .header .btn:hover {
+        color: var(--orange);
+        border-bottom: 1px solid var(--orange);
+    }
+
+.content {
+    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
+}
+
+    .content h1 {
+        margin-top: 0;
+        color: var(--orange);
+        letter-spacing: 1px;
+    }
+
+    .content p {
+        margin-bottom: 2rem;
+    }
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.footer span {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    margin: 0 0.5rem;
+    text-transform: lowercase;
+}
+
+    .footer span:first-child {
+        margin-left: 0;
+    }
+
+    .footer span:last-child {
+        margin-right: 0;
+    }
+
+    .footer span:hover {
+        color: var(--orange);
+        border-bottom-color: var(--orange);
+    }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 481px;
+    }
+
+    .header .logo {
+        font-size: 2.2rem;
+    }
+
+    .header .btn {
+        font-size: 12px;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer p {
+        font-size: 1.1rem;
+    }
+}
